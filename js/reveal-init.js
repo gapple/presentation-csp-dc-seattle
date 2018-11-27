@@ -74,4 +74,23 @@
       ]
   });
 
+  Reveal.addEventListener('slidechanged', function (event) {
+    if (event.currentSlide.classList.contains('screenshot')) {
+      let video = event.currentSlide.querySelector('video');
+      if (video) {
+        video.currentTime = 0;
+        // Timeout helps ensure video starts after slide transition complete.
+        setTimeout(function () {
+          event.currentSlide.querySelector('video').play();
+        }, 500)
+      }
+    }
+    else if (event.previousSlide && event.previousSlide.classList.contains('screenshot')) {
+      let video = event.previousSlide.querySelector('video');
+      if (video) {
+        video.pause();
+      }
+    }
+  });
+
 }());

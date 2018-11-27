@@ -86,6 +86,10 @@ figure.code figcaption {
   color: #eeedef;
 }
 
+#are-you-afraid {
+  background-color: #000;
+}
+
 #end .content {
   margin-top: auto;
   text-align: center;
