@@ -90,6 +90,11 @@ figure.code figcaption {
   background-color: #000;
 }
 
+#coinhive figure pre {
+  text-wrap: normal;
+  white-space: normal;
+}
+
 #do-you-know {
   background-color: #111;
   color: #fff;
