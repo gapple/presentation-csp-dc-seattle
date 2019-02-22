@@ -127,6 +127,28 @@ figure.code figcaption {
   line-height: 1.2;
   text-shadow: 0 0 .5vmin #fff, 0 0 1vmin #fff, 0 0 2vmin #808080, 0 0 3vmin #808080;
 }
+@media (orientation: portrait) {
+  #do-you-know figure {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "time" "when";
+  }
+  #do-you-know .do-you-know--time br {
+    display: none;
+  }
+  #do-you-know .do-you-know--where {
+    text-align: center;
+  }
+}
+/** square-ish viewports don't fit full text as well **/
+@media (orientation: landscape) and (max-aspect-ratio: 4/3), (orientation: portrait) and (min-aspect-ratio: 3/4) {
+  #do-you-know .do-you-know--time {
+    font-size: 30vmin;
+  }
+  #do-you-know .do-you-know--where {
+    font-size: 13vmin;
+  }
+}
 
 #end .content {
   margin-top: auto;
