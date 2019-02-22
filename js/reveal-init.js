@@ -11,11 +11,14 @@
     'orange-river',
     'playground',
     'stream',
-    'synapses',
     'indigo'
   ];
   document.addEventListener('DOMContentLoaded', function () {
     const reveal = document.getElementsByClassName('reveal').item(0);
+    if (!reveal.classList.contains('pattern--random')) {
+      return;
+    }
+
     reveal.classList.forEach(function (value) {
       if (value.substr(0, 7) === 'pattern') {
         reveal.classList.remove(value);
