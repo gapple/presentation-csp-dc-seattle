@@ -86,6 +86,10 @@ figure.code figcaption {
   color: #eeedef;
 }
 
+.references ul {
+  width: 100%;
+}
+
 #are-you-afraid {
   background-color: #000;
 }
