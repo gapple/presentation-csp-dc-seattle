@@ -150,6 +150,39 @@ figure.code figcaption {
   }
 }
 
+#csp-support figure {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  grid-column-gap: 5vmin;
+  grid-row-gap: 5vmin;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+@media (orientation: landscape) {
+  #csp-support figure {
+    padding: 0 10vmin;
+  }
+}
+#csp-support figure > div {
+  text-align: center;
+}
+#csp-support figure .browser {
+  align-self: end;
+}
+#csp-support figure .supported {
+  align-self: start;
+}
+#csp-support figure .supported.yes {
+  color: green;
+}
+#csp-support figure .supported.warning {
+  color: orange;
+}
+#csp-support figure .fa {
+  font-size: 15vmin;
+}
+
 #end .content {
   margin-top: auto;
   text-align: center;
