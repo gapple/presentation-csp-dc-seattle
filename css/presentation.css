@@ -164,23 +164,42 @@ figure.code figcaption {
     padding: 0 10vmin;
   }
 }
-#csp-support figure > div {
+
+#csp-support table {
+  font-size: 10vmin;
+  width: 80%;
+}
+@media (orientation: portrait) {
+  #csp-support table {
+    width: 100%;
+  }
+}
+#csp-support table th,
+#csp-support table td {
+  padding: .1em;
   text-align: center;
+  vertical-align: middle;
 }
-#csp-support figure .browser {
-  align-self: end;
+/** Firefox doesn't hide cell border if row opacity is 0 **/
+#csp-support .fragment th,
+#csp-support .fragment td {
+  transition: all 0.2s linear;
 }
-#csp-support figure .supported {
-  align-self: start;
+#csp-support .fragment:not(.visible) th,
+#csp-support .fragment:not(.visible) td {
+  border-bottom-color: transparent;
 }
-#csp-support figure .supported.yes {
+#csp-support th:first-child {
+  font-size: 5vmin;
+}
+#csp-support .yes {
   color: green;
 }
-#csp-support figure .supported.warning {
+#csp-support .warning {
   color: orange;
 }
-#csp-support figure .fa {
-  font-size: 15vmin;
+#csp-support .no {
+  color: red;
 }
 
 #end .content {

@@ -159,16 +159,48 @@
 						<div class="twitter"><a href="https://twitter.com/gappleca"><i class="fa fa-twitter"></i> <span>gappleca</span></a></div>
 					</div>
 					<figure>
-						<div class="browser"><i class="fa fa-chrome"></i></div>
-						<div class="supported yes"><i class="fa fa-check"></i></div>
-						<div class="browser"><i class="fa fa-firefox"></i></div>
-						<div class="supported yes"><i class="fa fa-check"></i></div>
-						<div class="browser"><i class="fa fa-edge"></i></div>
-						<div class="supported yes"><i class="fa fa-check"></i></div>
-						<div class="browser"><i class="fa fa-internet-explorer"></i></div>
-						<div class="supported warning"><i class="fa fa-times"></i></div>
+						<table>
+							<tr class="browsers">
+								<th></th>
+								<th><i class="fa fa-chrome"></i></th>
+								<th><i class="fa fa-firefox"></i></th>
+								<th><i class="fa fa-safari"></i></th>
+								<th><i class="fa fa-edge"></i></th>
+								<th><i class="fa fa-internet-explorer"></i></th>
+							</tr>
+							<tr class="level1">
+								<th>1</th>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-times warning"></i></td>
+							</tr>
+							<tr class="level2 fragment">
+								<th>2</th>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-check yes"></i></td>
+								<td><i class="fa fa-times no"></i></td>
+							</tr>
+							<tr class="level3 fragment">
+								<th>3</th>
+								<td><i class="fa fa-check warning"></i></td>
+								<td><i class="fa fa-check warning"></i></td>
+								<td><i class="fa fa-times warning"></i></td>
+								<td><i class="fa fa-times warning"></i></td>
+								<td><i class="fa fa-times no"></i></td>
+							</tr>
+						</table>
 					</figure>
 				</div>
+				<aside class="notes">
+					Level 1 Published February 2015
+					Level 2 Published December 2016
+					Most recent browser to add support was Edge in 2015
+					IE only supports sandbox directive
+				</aside>
 			</section>
 			<section id="csp-module" class="screenshot full">
 				<div class="grid-wrapper">
