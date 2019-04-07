@@ -1,0 +1,10 @@
+
+#umami-install {
+  background-color: #000;
+}
+#umami-install video {
+  width: 80%;
+  height: 80%;
+  justify-self: center;
+  align-self: center;
+}
