@@ -235,10 +235,22 @@
 		</section>
 
 		<section>
-			<section id="umami-install" class="screenshot full">
+			<section id="umami-install" class="screenshot full" data-autoslide="8000">
 				<div class="grid-wrapper">
 					<video>
 						<source src="images/umami-site/install.mp4" />
+					</video>
+				</div>
+			</section>
+			<section class="screenshot full">
+				<div class="grid-wrapper">
+					<img src="images/umami-site/installed.png" />
+				</div>
+			</section>
+			<section id="trade-federation" class="screenshot full" data-autoslide="3800">
+				<div class="grid-wrapper">
+					<video>
+						<source src="images/trade-federation-doors.mp4" type="video/mp4" />
 					</video>
 				</div>
 			</section>
@@ -250,10 +262,85 @@
 					</div>
 
 					<figure class="code">
-						<pre><code>
+						<pre><code class="lang-plaintext">
 							Content-Security-Policy: default-src 'none';
 						</code></pre>
 					</figure>
+				</div>
+			</section>
+			<section class="screenshot full">
+				<div class="grid-wrapper">
+					<img src="images/umami-site/default-src-none.png" />
+				</div>
+			</section>
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/gappleca"><i class="fa fa-twitter"></i> <span>gappleca</span></a></div>
+					</div>
+
+					<figure class="code">
+						<pre><code class="lang-plaintext">
+							Content-Security-Policy: default-src 'self';
+						</code></pre>
+					</figure>
+				</div>
+			</section>
+			<section class="screenshot full">
+				<div class="grid-wrapper">
+					<img src="images/umami-site/default-src-self.png" />
+				</div>
+			</section>
+			<section class="screenshot full">
+				<div class="grid-wrapper">
+					<img src="images/umami-site/default-src-self-console.png" />
+				</div>
+			</section>
+			<section class="screenshot full">
+				<div class="grid-wrapper">
+					<img src="images/umami-site/default-src-self-console-chrome.png" />
+				</div>
+			</section>
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/gappleca"><i class="fa fa-twitter"></i> <span>gappleca</span></a></div>
+					</div>
+
+					<figure class="code">
+						<pre><code class="lang-plaintext">
+							Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com
+						</code></pre>
+					</figure>
+				</div>
+			</section>
+			<section class="screenshot full">
+				<div class="grid-wrapper">
+					<img src="images/umami-site/style-src-google.png" />
+				</div>
+			</section>
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/gappleca"><i class="fa fa-twitter"></i> <span>gappleca</span></a></div>
+					</div>
+
+					<figure class="code">
+						<pre><code class="lang-plaintext">
+							Content-Security-Policy:
+							  default-src 'self';
+							  style-src 'self' https://fonts.googleapis.com;
+							  font-src 'self' https://fonts.gstatic.com
+						</code></pre>
+					</figure>
+				</div>
+			</section>
+			<section class="screenshot full">
+				<div class="grid-wrapper">
+					<img src="images/umami-site/font-src-google.png" />
 				</div>
 			</section>
 		</section>
