@@ -146,3 +146,20 @@
   justify-self: center;
   align-self: center;
 }
+
+#basic-directives sup {
+  font-size: .5em;
+}
+
+#inline-load-api div.fragment {
+  display: block;
+  margin: 1em 0;
+}
+
+#need-inline .content {
+  text-align: center;
+  font-size: 3rem;
+}
+#need-inline .content > div {
+  margin: 1em;
+}
