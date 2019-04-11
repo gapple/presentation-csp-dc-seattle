@@ -1,4 +1,81 @@
 
+#about {
+  /*background-image: url('../images/granfondo.jpg');*/
+  /*background-size: cover;*/
+  /*background-position: center center;*/
+  overflow: hidden;
+}
+#about .grid-wrapper {
+  grid-template-rows: 1fr;
+  grid-template-areas: "content";
+}
+#about .content {
+  display: flex;
+  max-height: 100%;
+}
+#about .content img {
+  display: block;
+  width: 70%;
+  margin: -20vmin 0 -10vmin -10vmin;
+}
+#about a {
+  color: rgb(51, 51, 51);
+}
+#about aside {
+  margin-left: 10vmin;
+  background-color: rgba(255, 255, 255, .8);
+  color: #000;
+  float: right;
+  font-size: 1.5em;
+  text-align: center;
+  width: 30%;
+}
+#about aside hr {
+  color: rgba(0,0,0, 0.075);
+  margin: 2.5vmin 0;
+}
+#about aside ul {
+  display: block;
+  font-size: inherit;
+  list-style: none;
+  margin: 2.5vmin 0 0;
+  width: auto;
+}
+#about .country-flag {
+  font-size: 200%;
+}
+#about .projects {
+  text-align: center;
+}
+
+#about .accounts a:hover .fab + span,
+#about .projects a:hover {
+  text-decoration: underline rgba(51, 51, 51, 0.65);
+}
+#about .accounts {
+  display: grid;
+  justify-content: center;
+}
+#about .accounts li {
+  margin-bottom: 0.25em;
+}
+#about .accounts a {
+  display: flex;
+  align-items: center;
+}
+#about .accounts .fab {
+  margin-right: 0.25ex;
+  width: 1.8ex;
+}
+@media (orientation: portrait) and (max-width: 480px) {
+  #about .content img {
+    display: none;
+  }
+  #about aside {
+    width: 100%;
+  }
+}
+
 #are-you-afraid {
   background-color: #000;
 }
