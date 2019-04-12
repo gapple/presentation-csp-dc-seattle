@@ -126,7 +126,21 @@ figure.code figcaption {
 }
 
 #end .content {
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-size: 150%;
+  height: 100%;
+}
+#end .content > div {
+  margin: auto;
+}
+#end .content > div > div {
+  margin: 2em 0;
+}
+#end .content a {
+  margin-top: auto;
+  justify-self: end;
+  display: block;
+  margin-top: auto;
 }
